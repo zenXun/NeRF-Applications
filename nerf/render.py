@@ -34,7 +34,7 @@ def pose_spherical(theta, phi, radius):
     c2w = np.array([[-1,0,0,0],[0,0,1,0],[0,1,0,0],[0,0,0,1]]) @ c2w
     return c2w
 
-def generate_video_frames(H, W, focal, model):
+def generate_video_frames(H, W, focal, model, N_samples):
     frames = []
     for th in tqdm(np.linspace(0., 360., 120, endpoint=False)):
         c2w = pose_spherical(th, -30., 4.)
