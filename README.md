@@ -7,4 +7,5 @@ The best parameter combination is
 * number of iterations: 2000
 
 The following gif is generated using model trained with hyper parameters listed above.
+
 ![legogif](results/lego.gif)
